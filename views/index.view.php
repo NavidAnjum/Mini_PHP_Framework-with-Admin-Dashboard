@@ -3,6 +3,11 @@
     #wrapper {
         display: block;
     }
+    .h2, h2 {
+        font-size: 2rem;
+        color: cadetblue;
+        font-weight: bold;
+    }
 </style>
 
 <section class="vh-100">
@@ -10,18 +15,27 @@
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12 ">
+
+                        <!-- Registration-->
+                        <div class="card shadow p-5 animated zoomIn slow text-center">
+                            <h2 >Fabric Tracker</h2>
+                            <p style="background: floralwhite;">Please login to use the application!</p>
+                        </div>
+                    </div>
+
                     <div class="col-md-6 mb-5">
 
                         <!-- Registration-->
-                        <div class="card shadow p-5 animated zoomIn slow"  style="height: 33rem">
+                        <div class="card shadow p-5 animated zoomIn slow"  style="height: 24rem">
                             <img src="./views/img/aw_noman.jpg" class="img-fluid" height="33rem">
 
                         </div>
                     </div>
                     <div class="col-md-6 mb-5">
 
-                        <div class="card shadow animated zoomIn slow p-5"  style="height: 33rem">
-                            <h3 class="text-center font-weight-bold text-uppercase mb-3">Login Here</h3>
+                        <div class="card shadow animated zoomIn slow p-5"  style="height: 24rem">
+                            <h2 class="text-center">Login Here</h2>
 
                             <form action="/php_test/login" method="post">
                                 <div class="form-group">
@@ -37,14 +51,11 @@
 
                                 <button type="submit" class="btn btn-outline-dark btn-block rounded-pill">Login</button>
                             </form>
-                            <h6 class="mt-3">Don't have an account? <a href="#"> Create Account Here</a></h6>
-                            <p class="text-center mt-3"> or Login with<p>
-                            <div class="text-center">
-                                <i class="fab fa-facebook mx-2 fa-2x"></i>
-                                <i class="fab fa-twitter  mx-2 fa-2x"></i>
-                                <i class="fab fa-instagram  mx-2 fa-2x"></i>
-                                <i class="fab fa-google  mx-2 fa-2x"></i>
-                            </div>
+                                <h6 class="mt-3 text-center" style="background: floralwhite;">
+                                Don't have an account? Please contact with the admin!</h6>
+
+
+
 
                         </div>
                     </div>
