@@ -1,4 +1,4 @@
-<?php view('/partials/head.php') ?>
+<?php view('partials/head.php') ?>
 <style>
     #wrapper {
         display: block;
@@ -36,8 +36,11 @@
 
                         <div class="card shadow animated zoomIn slow p-5"  style="height: 24rem">
                             <h2 class="text-center">Login Here</h2>
+                            <p class="text-center" style="color: darkred">
+                                <?php echo isset($_SESSION['heading']) ?  $_SESSION['heading'] : '';?>
+                            </p>
 
-                            <form action="/php_test/login" method="post">
+                            <form action="/fabric_tracker/login" method="post">
                                 <div class="form-group">
                                     <label>Enter Username</label>
                                     <input type="text" id="user_id" name="user_id"
@@ -69,3 +72,4 @@
 </section>
 
 <?php view('/partials/footer.php') ?>
+<?php view('partials/footer-end.php') ?>

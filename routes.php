@@ -1,9 +1,13 @@
 <?php
 
-$router->get('/php_test/', 'controllers/index.php');
+$router->get('/fabric_tracker/', 'controllers/index.php');
 
-$router->post('/php_test/login', 'controllers/login.php');
+$router->post('/fabric_tracker/login', 'controllers/login.php');
 
-$router->get('/php_test/dashboard', 'controllers/dashboard.php');
+$router->get('/fabric_tracker/dashboard', 'controllers/dashboard.php');
 
-$router->get('/php_test/logout', 'controllers/logout.php');
+$router->get('/fabric_tracker/logout', 'controllers/logout.php');
+
+$router->get('/fabric_tracker/users/create', 'controllers/users/create.php');
+
+$router->post('/fabric_tracker/users/create', 'controllers/users/create.php');

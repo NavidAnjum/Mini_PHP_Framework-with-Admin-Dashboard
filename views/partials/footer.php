@@ -39,28 +39,26 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="/php_test/logout">Logout</a>
+                <a class="btn btn-primary" href="/fabric_tracker/logout">Logout</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="views/sb-admin/vendor/jquery/jquery.min.js"></script>
-<script src="views/sb-admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/fabric_tracker/views/sb-admin/vendor/jquery/jquery.min.js"></script>
+<script src="/fabric_tracker/views/sb-admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="views/sb-admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/fabric_tracker/views/sb-admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="views/sb-admin/js/sb-admin-2.min.js"></script>
+<script src="/fabric_tracker/views/sb-admin/js/sb-admin-2.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="views/sb-admin/vendor/chart.js/Chart.min.js"></script>
+<!--<script src="/fabric_tracker/views/sb-admin/vendor/chart.js/Chart.min.js"></script>-->
 
 <!-- Page level custom scripts -->
 <!--<script src="views/sb-admin/js/demo/chart-area-demo.js"></script>-->
 <!--<script src="views/sb-admin/js/demo/chart-pie-demo.js"></script>-->
-
-</body>
-</html>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

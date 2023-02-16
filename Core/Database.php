@@ -47,4 +47,15 @@ class Database
 
         return $result;
     }
+	public function create($table, $data)
+	{
+		$columns = implode(',', array_keys($data));
+		$values = implode(',', array_fill(0, count($data), '?'));
+		 $query = "INSERT INTO $table ($columns) VALUES ($values)";
+
+		 $this->statement = $this->connection->prepare($query);
+		 $this->statement->execute(array_values($data));
+
+		return $this;
+	}
 }
